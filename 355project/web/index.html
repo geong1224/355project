@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HomePage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- jQuery  -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--load Bootstrap's all JavaScript plugin -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+
+    #content-sec3 {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        background-size: 100% auto;
+        text-align: center;
+
+    }
+
+    #content-sec3 .title {
+        margin-top:50px;
+        font-family: "Comic Sans MS";
+        font-size: 80px;
+        color: wheat;
+
+    }
+
+    #content-sec3 .title-sub-line {
+        margin-top:15px;
+        margin-bottom: 18px;
+        font-family: "Comic Sans MS";
+        font-size: 60px;
+        color: wheat;
+        text-align: center;
+    }
+
+
+</style>
+
+
+<body>
+<nav class="nav nav-tabs" role="navigation" >
+    <div class="container-fluid" >
+        <div class="navbar-header" >
+
+            <a class="navbar-brand " href="index.html">Home</a>
+
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Course
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.zybooks.com/" target="_blank">ZyBooks</a></li>
+                        <li><a href="https://tophat.com/" target="_blank">TopHat</a></li>
+                        <li><a href="https://drive.google.com/open?id=1AsHhIFfQ3yNE_m2z4wswRfKh77K0UH9w" target="_blank">Course Google Drive</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="developers.html">About The Developer</a></li>
+                        <li> <a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Browser
+                    <b class="caret"></b>
+                </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="navigator.html">Navigator</a></li>
+                        <li><a href="window.html">Window</a></li>
+                        <li><a href="screen.html">Screen</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="geolocation.html">Geolocation</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<div id="content-sec3">
+    <img class="img-responsive " src="img/black.jpg" />
+    <div id="content-sec3-adjust" style="position: absolute; top: 0; left: 30%;">
+        <h2 class="title">Welcome To</h2>
+        <p class="title-sub-line hidden-sm hidden-xs">Little Red Riding Hood</p>
+        <!--<img src="img/dalao.gif">-->
+    </div>
+
+    <div id="content-2" style="position: absolute; top: 200px; left: 40%;">
+
+        <img src="img/redhat.png">
+        <!--<img src="img/dalao.gif">-->
+    </div>
+</div>
+
+
+
+
+</body>
+<script>
+    $(document).ready(function(){
+        $(document).off('click.bs.dropdown.data-api');
+    });$(document).ready(function(){
+        dropdownOpen();
+    });
+    function dropdownOpen() {
+
+        var $dropdownLi = $('li.dropdown');
+
+        $dropdownLi.mouseover(function() {
+            $(this).addClass('open');
+        }).mouseout(function() {
+            $(this).removeClass('open');
+        });
+    }
+</script>
+
+
+</html>
